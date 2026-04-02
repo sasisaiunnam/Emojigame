@@ -25,7 +25,7 @@ function App() {
         setGameStatus('lost');
       }
       else{
-        // setClickedEmoji([]);
+        setClickedEmoji([]);
         setCards(Shuffle(Emojis));
       }
 
@@ -36,6 +36,7 @@ function App() {
       const newScore = score + 1;
       setScore(newScore)
 
+      
       
 
       if (newScore > topScore) {
@@ -59,8 +60,6 @@ function App() {
   setCards(Shuffle(Emojis))
   
  };
-
-
 
   return (
     <center>
